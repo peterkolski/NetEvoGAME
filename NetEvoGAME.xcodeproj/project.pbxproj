@@ -32,18 +32,6 @@
 /* Begin PBXFileReference section */
 		DB3F17301636CC1B00ECB00B /* NetEvoGAME */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetEvoGAME; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NetEvoGAME.1; sourceTree = "<group>"; };
-		DB3F173E1636CC5200ECB00B /* SubDigraph Adapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "SubDigraph Adapter.cpp"; sourceTree = "<group>"; };
-		DB3F173F1636CC5200ECB00B /* Harmonic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Harmonic.cpp; sourceTree = "<group>"; };
-		DB3F17401636CC5200ECB00B /* VectorGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorGame.cpp; sourceTree = "<group>"; };
-		DB3F17411636CC5200ECB00B /* AndreCompasion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AndreCompasion.cpp; sourceTree = "<group>"; };
-		DB3F17421636CC5200ECB00B /* test.bundled_properties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.bundled_properties.cpp; sourceTree = "<group>"; };
-		DB3F17431636CC5200ECB00B /* Interations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interations.cpp; sourceTree = "<group>"; };
-		DB3F174B1636CC9700ECB00B /* simulate_map.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulate_map.cc; sourceTree = "<group>"; };
-		DB3F174C1636CC9700ECB00B /* evolve_sa_dyn.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evolve_sa_dyn.cc; sourceTree = "<group>"; };
-		DB3F174D1636CC9700ECB00B /* evolve_sa_top.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evolve_sa_top.cc; sourceTree = "<group>"; };
-		DB3F174E1636CC9700ECB00B /* ring.gml */ = {isa = PBXFileReference; lastKnownFileType = text; path = ring.gml; sourceTree = "<group>"; };
-		DB3F174F1636CC9700ECB00B /* simulate_ode.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulate_ode.cc; sourceTree = "<group>"; };
-		DB3F17501636CC9700ECB00B /* systems.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = systems.cc; sourceTree = "<group>"; };
 		DB3F17541636CD0400ECB00B /* SpeedTest_Nodes_NoInteract.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpeedTest_Nodes_NoInteract.cpp; sourceTree = "<group>"; };
 		DB3F17561636CF0300ECB00B /* Calculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Calculations.h; path = ../../../Development/Library/include/peter/Calculations.h; sourceTree = "<group>"; };
 		DB3F17571636CF0300ECB00B /* PeterDynamics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeterDynamics.h; path = ../../../Development/Library/include/peter/PeterDynamics.h; sourceTree = "<group>"; };
@@ -63,6 +51,13 @@
 		DB3F17B41636D38100ECB00B /* system.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = system.cc; path = ../../../Development/Library/include/netevo/system.cc; sourceTree = "<group>"; };
 		DB3F17B51636D38100ECB00B /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = system.h; path = ../../../Development/Library/include/netevo/system.h; sourceTree = "<group>"; };
 		DB3F17B61636D38100ECB00B /* visualise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = visualise.h; path = ../../../Development/Library/include/netevo/visualise.h; sourceTree = "<group>"; };
+		DBB8762A1636D8FC00EBD4B6 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
+		DBB8762C1636D93800EBD4B6 /* evolve_sa_dyn.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evolve_sa_dyn.cc; sourceTree = "<group>"; };
+		DBB8762D1636D93800EBD4B6 /* evolve_sa_top.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evolve_sa_top.cc; sourceTree = "<group>"; };
+		DBB8762E1636D93800EBD4B6 /* ring.gml */ = {isa = PBXFileReference; lastKnownFileType = text; path = ring.gml; sourceTree = "<group>"; };
+		DBB8762F1636D93800EBD4B6 /* simulate_map.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulate_map.cc; sourceTree = "<group>"; };
+		DBB876301636D93800EBD4B6 /* simulate_ode.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulate_ode.cc; sourceTree = "<group>"; };
+		DBB876311636D93800EBD4B6 /* systems.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = systems.cc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +74,10 @@
 		DB3F17251636CC1B00ECB00B = {
 			isa = PBXGroup;
 			children = (
+				DBB8762B1636D93800EBD4B6 /* examples */,
 				DB3F17AA1636D36B00ECB00B /* netevo */,
 				DB3F17551636CD5200ECB00B /* peter */,
-				DB3F174A1636CC8900ECB00B /* NetEvo Examples */,
-				DB3F173D1636CC4600ECB00B /* Tests */,
+				DBB8762A1636D8FC00EBD4B6 /* Tests */,
 				DB3F17331636CC1B00ECB00B /* NetEvoGAME */,
 				DB3F17311636CC1B00ECB00B /* Products */,
 			);
@@ -103,32 +98,6 @@
 				DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */,
 			);
 			path = NetEvoGAME;
-			sourceTree = "<group>";
-		};
-		DB3F173D1636CC4600ECB00B /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				DB3F173E1636CC5200ECB00B /* SubDigraph Adapter.cpp */,
-				DB3F173F1636CC5200ECB00B /* Harmonic.cpp */,
-				DB3F17401636CC5200ECB00B /* VectorGame.cpp */,
-				DB3F17411636CC5200ECB00B /* AndreCompasion.cpp */,
-				DB3F17421636CC5200ECB00B /* test.bundled_properties.cpp */,
-				DB3F17431636CC5200ECB00B /* Interations.cpp */,
-			);
-			name = Tests;
-			sourceTree = "<group>";
-		};
-		DB3F174A1636CC8900ECB00B /* NetEvo Examples */ = {
-			isa = PBXGroup;
-			children = (
-				DB3F174B1636CC9700ECB00B /* simulate_map.cc */,
-				DB3F174C1636CC9700ECB00B /* evolve_sa_dyn.cc */,
-				DB3F174D1636CC9700ECB00B /* evolve_sa_top.cc */,
-				DB3F174E1636CC9700ECB00B /* ring.gml */,
-				DB3F174F1636CC9700ECB00B /* simulate_ode.cc */,
-				DB3F17501636CC9700ECB00B /* systems.cc */,
-			);
-			name = "NetEvo Examples";
 			sourceTree = "<group>";
 		};
 		DB3F17551636CD5200ECB00B /* peter */ = {
@@ -161,6 +130,19 @@
 				DB3F17B61636D38100ECB00B /* visualise.h */,
 			);
 			name = netevo;
+			sourceTree = "<group>";
+		};
+		DBB8762B1636D93800EBD4B6 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				DBB8762C1636D93800EBD4B6 /* evolve_sa_dyn.cc */,
+				DBB8762D1636D93800EBD4B6 /* evolve_sa_top.cc */,
+				DBB8762E1636D93800EBD4B6 /* ring.gml */,
+				DBB8762F1636D93800EBD4B6 /* simulate_map.cc */,
+				DBB876301636D93800EBD4B6 /* simulate_ode.cc */,
+				DBB876311636D93800EBD4B6 /* systems.cc */,
+			);
+			path = examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +306,7 @@
 				DB3F173C1636CC1B00ECB00B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

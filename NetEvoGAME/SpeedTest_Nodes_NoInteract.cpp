@@ -22,7 +22,7 @@ using namespace lemon;
 
 int main(){
     System          pSys;
-    SIRdynamics     mDyn;
+    SIRdynamic      mDyn;
     double  StepSize = 0.001;
     double  tMax = 1.0;
     pSys.addNodeDynamic( &mDyn );
