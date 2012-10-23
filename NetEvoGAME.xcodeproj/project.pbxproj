@@ -58,6 +58,10 @@
 		DBB8762F1636D93800EBD4B6 /* simulate_map.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulate_map.cc; sourceTree = "<group>"; };
 		DBB876301636D93800EBD4B6 /* simulate_ode.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulate_ode.cc; sourceTree = "<group>"; };
 		DBB876311636D93800EBD4B6 /* systems.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = systems.cc; sourceTree = "<group>"; };
+		DBE51B251636E24F009267EA /* StaticGraph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StaticGraph.cpp; sourceTree = "<group>"; };
+		DBE51B271636E267009267EA /* MapCopyDyn.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MapCopyDyn.cpp; sourceTree = "<group>"; };
+		DBE51B281636E267009267EA /* MapCopy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MapCopy.cpp; sourceTree = "<group>"; };
+		DBE51B291636E267009267EA /* NE2_Reference_LEMON_Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NE2_Reference_LEMON_Map.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,10 @@
 		DB3F17331636CC1B00ECB00B /* NetEvoGAME */ = {
 			isa = PBXGroup;
 			children = (
+				DBE51B271636E267009267EA /* MapCopyDyn.cpp */,
+				DBE51B281636E267009267EA /* MapCopy.cpp */,
+				DBE51B291636E267009267EA /* NE2_Reference_LEMON_Map.cpp */,
+				DBE51B251636E24F009267EA /* StaticGraph.cpp */,
 				DB3F17541636CD0400ECB00B /* SpeedTest_Nodes_NoInteract.cpp */,
 				DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */,
 			);
