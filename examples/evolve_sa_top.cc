@@ -91,7 +91,7 @@ int main () {
    
    System sys, *sysOut;
    //sys.randomGraph(0.3, 25, false, true);
-   sys.ringGraph(25, 2, true);
+   sys.ringGraph(2500, 2, true);
    
    EvolveSAParams evoParams;
    MyMutate mut;

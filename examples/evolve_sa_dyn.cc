@@ -177,24 +177,24 @@ int main () {
    // Load our new dynamics into the system
    RosslerChaoticOscillator vDyn;
    sys.addNodeDynamic(&vDyn);
-
+    
    // Create an undirected ring topology with our node dynamics (this includes diffuse coupling)
    sys.ringGraph(25, 2, "RosslerChaoticOscillator", "NoArcDynamic", true);
-   
+    
    EvolveSAParams evoParams; // Use the default parameters   
    MyMutate mut;
    SyncPerf per;
    EvolveSA evo(evoParams, per, mut);
-   
+    
    SimulateOdeConst simOdeConst = SimulateOdeConst(RK_CASH_KARP_54, 10e-6, 10e-6, 10.0);  
    RandomInit initial;
-   
+    
    ChangeLog nullLogger;
    MyEvoObserver obs;
-   
-   sys.saveToGML("evolve_sa_dyn_in.gml");
+    
+//   sys.saveToGML("evolve_sa_dyn_in.gml");
    sysOut = evo.evolve(sys, simOdeConst, initial, obs, nullLogger);
-   sysOut->saveToGML("evolve_sa_dyn_out.gml");
+//   sysOut->saveToGML("evolve_sa_dyn_out.gml");
    
    return 0;
 }

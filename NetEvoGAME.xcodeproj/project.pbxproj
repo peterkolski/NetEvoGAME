@@ -13,7 +13,7 @@
 		DB3F17B91636D38100ECB00B /* gml.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17AF1636D38100ECB00B /* gml.cc */; };
 		DB3F17BA1636D38100ECB00B /* simulate.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17B21636D38100ECB00B /* simulate.cc */; };
 		DB3F17BB1636D38100ECB00B /* system.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17B41636D38100ECB00B /* system.cc */; };
-		DB3F17BE1636D3F200ECB00B /* SpeedTest_Nodes_NoInteract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17541636CD0400ECB00B /* SpeedTest_Nodes_NoInteract.cpp */; };
+		DBA7F434169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBA7F432169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +51,7 @@
 		DB3F17B41636D38100ECB00B /* system.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = system.cc; path = ../../../Development/Library/include/netevo/system.cc; sourceTree = "<group>"; };
 		DB3F17B51636D38100ECB00B /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = system.h; path = ../../../Development/Library/include/netevo/system.h; sourceTree = "<group>"; };
 		DB3F17B61636D38100ECB00B /* visualise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = visualise.h; path = ../../../Development/Library/include/netevo/visualise.h; sourceTree = "<group>"; };
+		DBA7F432169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BarabasiAlbert_Generator.cpp; sourceTree = "<group>"; };
 		DBB8762A1636D8FC00EBD4B6 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
 		DBB8762C1636D93800EBD4B6 /* evolve_sa_dyn.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evolve_sa_dyn.cc; sourceTree = "<group>"; };
 		DBB8762D1636D93800EBD4B6 /* evolve_sa_top.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evolve_sa_top.cc; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 				DBE51B251636E24F009267EA /* StaticGraph.cpp */,
 				DB3F17541636CD0400ECB00B /* SpeedTest_Nodes_NoInteract.cpp */,
 				DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */,
+				DBA7F432169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp */,
 			);
 			path = NetEvoGAME;
 			sourceTree = "<group>";
@@ -209,7 +211,7 @@
 				DB3F17B91636D38100ECB00B /* gml.cc in Sources */,
 				DB3F17BA1636D38100ECB00B /* simulate.cc in Sources */,
 				DB3F17BB1636D38100ECB00B /* system.cc in Sources */,
-				DB3F17BE1636D3F200ECB00B /* SpeedTest_Nodes_NoInteract.cpp in Sources */,
+				DBA7F434169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,10 +247,10 @@
 					"\"$(SRCROOT)/../../../Development/Library/include/netevo\"",
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/Library/lib/\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lemon";
-				SDKROOT = macosx;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -275,9 +277,9 @@
 					"\"$(SRCROOT)/../../../Development/Library/include/netevo\"",
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/Library/lib/\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				OTHER_LDFLAGS = "-lemon";
-				SDKROOT = macosx;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
