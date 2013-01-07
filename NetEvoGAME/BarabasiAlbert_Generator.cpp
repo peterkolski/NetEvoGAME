@@ -11,11 +11,14 @@
 #include <iostream>
 #include <lemon/full_graph.h>
 #include <lemon/edge_set.h>
+#include <lemon/maps.h>
+#include <lemon/time_measure.h>
 
 /*
     ToDo:
         Random seed;
         Calculate the probability
+        Optimierung: Ohne die In/outDeg Map, sondern einzeln Degree berechnen
  */
 
 using namespace std;
@@ -24,17 +27,20 @@ using namespace netevo;
 
 int main( void ){
 
+    Timer   T(true);
     
     int init_nodes_num, final_nodes_num, edge_addition_num;
     
     init_nodes_num      = 10;
-    final_nodes_num           = 100;
+    final_nodes_num     = 10000;
     edge_addition_num   = 7;
     
     typedef ListEdgeSet< ListGraph >    EdgeSet;
     ListGraph                           mListGraph;
     EdgeSet                             mNewEdges( mListGraph );
     FullGraph                           fg(init_nodes_num);
+    InDegMap<ListGraph>                 inDeg( mListGraph);
+    OutDegMap<ListGraph>                outDeg( mListGraph);
     
     GraphCopy<FullGraph, ListGraph>     cg( fg, mListGraph); // Create the seed nodes
     cg.run();
@@ -65,6 +71,11 @@ int main( void ){
             mListGraph.addEdge( mNewEdges.u( e ), mNewEdges.v(e) );
         }
     }
+    
+    for (ListGraph::NodeIt n(mListGraph); n!=INVALID; ++n) {
+        cout << "degree: " << inDeg[ n ] << endl;
+    }
+    cout << T.realTime() << endl;
     
     cout << countEdges( mListGraph) << endl;
     cout << countEdges( fg ) << endl;
