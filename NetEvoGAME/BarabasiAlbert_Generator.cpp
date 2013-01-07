@@ -25,16 +25,16 @@ using namespace netevo;
 int main( void ){
 
     
-    int init_num_nodes, max_nodes, edge_addition_num;
+    int init_nodes_num, final_nodes_num, edge_addition_num;
     
-    init_num_nodes      = 10;
-    max_nodes           = 100;
+    init_nodes_num      = 10;
+    final_nodes_num           = 100;
     edge_addition_num   = 7;
     
     typedef ListEdgeSet< ListGraph >    EdgeSet;
     ListGraph                           mListGraph;
     EdgeSet                             mNewEdges( mListGraph );
-    FullGraph                           fg(init_num_nodes);
+    FullGraph                           fg(init_nodes_num);
     
     GraphCopy<FullGraph, ListGraph>     cg( fg, mListGraph); // Create the seed nodes
     cg.run();
@@ -46,7 +46,7 @@ int main( void ){
     lemon::Random   mRandom;
     ListGraph::Node newNode;
     
-    for ( int i = init_num_nodes; i < max_nodes; i++){
+    for ( int i = init_nodes_num; i < final_nodes_num; i++){
         newNode     = mListGraph.addNode();
         mNumEdges   = countEdges( mListGraph );
         mNumNodes   = countNodes( mListGraph );
@@ -54,7 +54,8 @@ int main( void ){
         
         while ( countEdges( mNewEdges ) != edge_addition_num ) {
             randomNodeID = mRandom.integer(0, mNumNodes - 1);
-            e = findEdge( mNewEdges, newNode, mNewEdges.nodeFromId( randomNodeID ) ); // does it exist already?
+            // --- CALCULATE THE PROBABILITY
+            e = findEdge( mNewEdges, newNode, mNewEdges.nodeFromId( randomNodeID ) ); // does the edge already exist?
             if ( e == INVALID){
                 mNewEdges.addEdge(  newNode, mListGraph.nodeFromId( randomNodeID ) );
             }
