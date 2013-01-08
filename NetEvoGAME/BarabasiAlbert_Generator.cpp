@@ -7,12 +7,14 @@
 //
 
 
-#include <netevo.h>
+//#include <netevo.h>
 #include <iostream>
+#include <lemon/list_graph.h>
 #include <lemon/full_graph.h>
 #include <lemon/edge_set.h>
 #include <lemon/maps.h>
 #include <lemon/time_measure.h>
+#include <lemon/random.h>
 
 /*
     ToDo:
@@ -23,7 +25,7 @@
 
 using namespace std;
 using namespace lemon;
-using namespace netevo;
+//using namespace netevo;
 
 int main( void ){
 
@@ -32,51 +34,54 @@ int main( void ){
     int init_nodes_num, final_nodes_num, edge_addition_num;
     
     init_nodes_num      = 10;
-    final_nodes_num     = 10000;
+    final_nodes_num     = 50;
     edge_addition_num   = 7;
     
     typedef ListEdgeSet< ListGraph >    EdgeSet;
     ListGraph                           mListGraph;
     EdgeSet                             mNewEdges( mListGraph );
     FullGraph                           fg(init_nodes_num);
-    InDegMap<ListGraph>                 inDeg( mListGraph);
-    OutDegMap<ListGraph>                outDeg( mListGraph);
     
     GraphCopy<FullGraph, ListGraph>     cg( fg, mListGraph); // Create the seed nodes
     cg.run();
     
-    int randomNodeID = -1;
-    int mNumEdges   = -1;
-    int mNumNodes   = -1;
+    int mNumEdges   = countEdges( mListGraph );
     EdgeSet::Edge e;
     lemon::Random   mRandom;
-    ListGraph::Node newNode;
+    mRandom.seedFromTime();
+    ListGraph::Node newNode, randNode;
     
+    // new edges will be saved seperatly in an EdgeSet, not to change the original node degrees
     for ( int i = init_nodes_num; i < final_nodes_num; i++){
-        newNode     = mListGraph.addNode();
         mNumEdges   = countEdges( mListGraph );
-        mNumNodes   = countNodes( mListGraph );
         mNewEdges.clear();
-        
+        newNode     = mListGraph.addNode();
+
         while ( countEdges( mNewEdges ) != edge_addition_num ) {
-            randomNodeID = mRandom.integer(0, mNumNodes - 1);
+            randNode = mListGraph.nodeFromId( mRandom[ mListGraph.maxNodeId() ] ) ;
             // --- CALCULATE THE PROBABILITY
-            e = findEdge( mNewEdges, newNode, mNewEdges.nodeFromId( randomNodeID ) ); // does the edge already exist?
-            if ( e == INVALID){
-                mNewEdges.addEdge(  newNode, mListGraph.nodeFromId( randomNodeID ) );
+            if ( mRandom.real() < (( (double)(countIncEdges(mListGraph, randNode)) / (double)( 2*mNumEdges ) )) ){
+                if ( findEdge( mNewEdges, newNode, randNode ) == INVALID){ // does the edge already exist?
+                    mNewEdges.addEdge(  newNode, randNode );
+                }
             }
         }
-        // Create the new edges
+        
+        // Create the new edges in the original graph
         for (EdgeSet::EdgeIt e( mNewEdges ); e!=INVALID; ++e){
             mListGraph.addEdge( mNewEdges.u( e ), mNewEdges.v(e) );
         }
     }
     
-    for (ListGraph::NodeIt n(mListGraph); n!=INVALID; ++n) {
-        cout << "degree: " << inDeg[ n ] << endl;
-    }
     cout << T.realTime() << endl;
     
     cout << countEdges( mListGraph) << endl;
     cout << countEdges( fg ) << endl;
+    
+    T.restart();
+    for (int i = 0; i<1000000; i++) {
+        mListGraph.addNode();
+    }
+    
+    cout << T.realTime() << endl;
 }
