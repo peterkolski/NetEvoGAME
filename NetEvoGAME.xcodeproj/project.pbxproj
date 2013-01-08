@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB2A784C169C2DE100430DD1 /* BA_Gen_Two.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB2A784A169C2DE000430DD1 /* BA_Gen_Two.cpp */; };
 		DB3F17371636CC1B00ECB00B /* NetEvoGAME.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */; };
 		DB3F17B71636D38100ECB00B /* evolve_sa.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17AB1636D38100ECB00B /* evolve_sa.cc */; };
 		DB3F17B81636D38100ECB00B /* evolve.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17AD1636D38100ECB00B /* evolve.cc */; };
 		DB3F17B91636D38100ECB00B /* gml.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17AF1636D38100ECB00B /* gml.cc */; };
 		DB3F17BA1636D38100ECB00B /* simulate.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17B21636D38100ECB00B /* simulate.cc */; };
 		DB3F17BB1636D38100ECB00B /* system.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17B41636D38100ECB00B /* system.cc */; };
-		DBA7F434169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBA7F432169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB2A784A169C2DE000430DD1 /* BA_Gen_Two.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BA_Gen_Two.cpp; sourceTree = "<group>"; };
 		DB3F17301636CC1B00ECB00B /* NetEvoGAME */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetEvoGAME; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NetEvoGAME.1; sourceTree = "<group>"; };
 		DB3F17541636CD0400ECB00B /* SpeedTest_Nodes_NoInteract.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpeedTest_Nodes_NoInteract.cpp; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 				DB3F17541636CD0400ECB00B /* SpeedTest_Nodes_NoInteract.cpp */,
 				DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */,
 				DBA7F432169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp */,
+				DB2A784A169C2DE000430DD1 /* BA_Gen_Two.cpp */,
 			);
 			path = NetEvoGAME;
 			sourceTree = "<group>";
@@ -211,7 +213,7 @@
 				DB3F17B91636D38100ECB00B /* gml.cc in Sources */,
 				DB3F17BA1636D38100ECB00B /* simulate.cc in Sources */,
 				DB3F17BB1636D38100ECB00B /* system.cc in Sources */,
-				DBA7F434169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp in Sources */,
+				DB2A784C169C2DE100430DD1 /* BA_Gen_Two.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

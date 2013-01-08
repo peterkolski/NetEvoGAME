@@ -78,10 +78,4 @@ int main( void ){
     cout << countEdges( mListGraph) << endl;
     cout << countEdges( fg ) << endl;
     
-    T.restart();
-    for (int i = 0; i<1000000; i++) {
-        mListGraph.addNode();
-    }
-    
-    cout << T.realTime() << endl;
-}
+ }
