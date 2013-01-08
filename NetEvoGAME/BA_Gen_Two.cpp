@@ -8,7 +8,7 @@
 
 
 
-//#include <netevo.h>
+#include <netevo.h>
 #include <iostream>
 #include <set>
 #include <unordered_set>
@@ -30,22 +30,62 @@ using namespace std;
 using namespace lemon;
 //using namespace netevo;
 
+class SystemPeter : public netevo::System{
+    void BarabasiAlbertGraph( int nodes, int edgesPerAddition){
+        // Clear any existing structure
+        clear();
+        
+        Random      mRandom;
+        mRandom.seedFromTime();
+        vector<int> nodeChoice;
+        vector<int> targets(edgesPerAddition, -1);
+        set<int>    mRndNodes;
+        int currentIndex = 0;
+        
+        // add seed nodes and mark them as targets
+        for(auto &v : targets){
+            v = currentIndex++;
+            this->addNode();
+        }
+        
+        while (countNodes(*this) < nodes ) {
+            // Add new node and connect to targets
+            currentIndex =  this->id( this->addNode() );
+            for(const auto &v : targets ){
+                this->addEdge( this->nodeFromId( currentIndex ), this->nodeFromId( v ) );
+            }
+            // This determines the degree probability
+            nodeChoice.insert(nodeChoice.end(), targets.begin(), targets.end() );
+            nodeChoice.insert(nodeChoice.end(), edgesPerAddition, currentIndex);  //degree of the new node
+            
+            mRndNodes.clear();
+            while (mRndNodes.size() < edgesPerAddition) {
+                mRndNodes.insert( nodeChoice[ mRandom.integer( nodeChoice.size() ) ] );
+            }
+            targets.clear();
+            targets.insert(targets.begin(), mRndNodes.begin(), mRndNodes.end() );
+        }
+        
+        // Update the state ID mapping
+        refreshStateIDs();
+    }
+};
+
+
 int main( void ){
     
     Timer   T(true);
     
     int final_nodes_num, edge_addition_num;
-    
-    final_nodes_num     = 1000000;
+    final_nodes_num     = 30000;
     edge_addition_num   = 7;
     
     ListGraph                           mGr;
-    
     lemon::Random   mRandom;
     mRandom.seedFromTime();
+    
     vector<int> nodeChoice;
-//    set<int>    mRndNodes;
-    unordered_set<int> mRndNodes;
+    set<int>    mRndNodes;
     vector<int> targets(edge_addition_num, -1);
     int currentIndex = 0;
     
@@ -71,7 +111,6 @@ int main( void ){
         }
         targets.clear();
         targets.insert(targets.begin(), mRndNodes.begin(), mRndNodes.end() );
-        
     }
     
     cout << "time: " << T.realTime() << endl;
@@ -90,3 +129,5 @@ int main( void ){
     .run();
     
   }
+
+

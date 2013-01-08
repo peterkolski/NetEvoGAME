@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB2A784C169C2DE100430DD1 /* BA_Gen_Two.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB2A784A169C2DE000430DD1 /* BA_Gen_Two.cpp */; };
+		DB2A7854169C577C00430DD1 /* BA_Graph_NetEvo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB2A7852169C577C00430DD1 /* BA_Graph_NetEvo.cpp */; };
 		DB3F17371636CC1B00ECB00B /* NetEvoGAME.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */; };
 		DB3F17B71636D38100ECB00B /* evolve_sa.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17AB1636D38100ECB00B /* evolve_sa.cc */; };
 		DB3F17B81636D38100ECB00B /* evolve.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17AD1636D38100ECB00B /* evolve.cc */; };
@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		DB2A784A169C2DE000430DD1 /* BA_Gen_Two.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BA_Gen_Two.cpp; sourceTree = "<group>"; };
+		DB2A7852169C577C00430DD1 /* BA_Graph_NetEvo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BA_Graph_NetEvo.cpp; sourceTree = "<group>"; };
 		DB3F17301636CC1B00ECB00B /* NetEvoGAME */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetEvoGAME; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NetEvoGAME.1; sourceTree = "<group>"; };
 		DB3F17541636CD0400ECB00B /* SpeedTest_Nodes_NoInteract.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpeedTest_Nodes_NoInteract.cpp; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 				DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */,
 				DBA7F432169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp */,
 				DB2A784A169C2DE000430DD1 /* BA_Gen_Two.cpp */,
+				DB2A7852169C577C00430DD1 /* BA_Graph_NetEvo.cpp */,
 			);
 			path = NetEvoGAME;
 			sourceTree = "<group>";
@@ -213,7 +215,7 @@
 				DB3F17B91636D38100ECB00B /* gml.cc in Sources */,
 				DB3F17BA1636D38100ECB00B /* simulate.cc in Sources */,
 				DB3F17BB1636D38100ECB00B /* system.cc in Sources */,
-				DB2A784C169C2DE100430DD1 /* BA_Gen_Two.cpp in Sources */,
+				DB2A7854169C577C00430DD1 /* BA_Graph_NetEvo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
