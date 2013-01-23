@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB2A7854169C577C00430DD1 /* BA_Graph_NetEvo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB2A7852169C577C00430DD1 /* BA_Graph_NetEvo.cpp */; };
 		DB3F17371636CC1B00ECB00B /* NetEvoGAME.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */; };
 		DB3F17B71636D38100ECB00B /* evolve_sa.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17AB1636D38100ECB00B /* evolve_sa.cc */; };
 		DB3F17B81636D38100ECB00B /* evolve.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17AD1636D38100ECB00B /* evolve.cc */; };
 		DB3F17B91636D38100ECB00B /* gml.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17AF1636D38100ECB00B /* gml.cc */; };
 		DB3F17BA1636D38100ECB00B /* simulate.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17B21636D38100ECB00B /* simulate.cc */; };
 		DB3F17BB1636D38100ECB00B /* system.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB3F17B41636D38100ECB00B /* system.cc */; };
+		DBB0A51916AFD1BC008C09F6 /* BA_GenCompare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBB0A51716AFD1BC008C09F6 /* BA_GenCompare.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +54,8 @@
 		DB3F17B51636D38100ECB00B /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = system.h; path = ../../../Development/Library/include/netevo/system.h; sourceTree = "<group>"; };
 		DB3F17B61636D38100ECB00B /* visualise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = visualise.h; path = ../../../Development/Library/include/netevo/visualise.h; sourceTree = "<group>"; };
 		DBA7F432169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BarabasiAlbert_Generator.cpp; sourceTree = "<group>"; };
+		DBB0A51516AFD162008C09F6 /* BA_Gen_3_fast_small.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BA_Gen_3_fast_small.h; sourceTree = "<group>"; };
+		DBB0A51716AFD1BC008C09F6 /* BA_GenCompare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BA_GenCompare.cpp; sourceTree = "<group>"; };
 		DBB8762A1636D8FC00EBD4B6 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
 		DBB8762C1636D93800EBD4B6 /* evolve_sa_dyn.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evolve_sa_dyn.cc; sourceTree = "<group>"; };
 		DBB8762D1636D93800EBD4B6 /* evolve_sa_top.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evolve_sa_top.cc; sourceTree = "<group>"; };
@@ -109,6 +111,8 @@
 				DB3F17361636CC1B00ECB00B /* NetEvoGAME.1 */,
 				DBA7F432169B0A1D005C0C32 /* BarabasiAlbert_Generator.cpp */,
 				DB2A784A169C2DE000430DD1 /* BA_Gen_Two.cpp */,
+				DBB0A51516AFD162008C09F6 /* BA_Gen_3_fast_small.h */,
+				DBB0A51716AFD1BC008C09F6 /* BA_GenCompare.cpp */,
 				DB2A7852169C577C00430DD1 /* BA_Graph_NetEvo.cpp */,
 			);
 			path = NetEvoGAME;
@@ -215,7 +219,7 @@
 				DB3F17B91636D38100ECB00B /* gml.cc in Sources */,
 				DB3F17BA1636D38100ECB00B /* simulate.cc in Sources */,
 				DB3F17BB1636D38100ECB00B /* system.cc in Sources */,
-				DB2A7854169C577C00430DD1 /* BA_Graph_NetEvo.cpp in Sources */,
+				DBB0A51916AFD1BC008C09F6 /* BA_GenCompare.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
