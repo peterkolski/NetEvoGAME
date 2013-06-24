@@ -2,8 +2,8 @@
 //  SpeedTest_Nodes_NoInteract.cpp
 //  NE2_SIR
 //
-//  Created by BildPeter Visuals on 15.11.11.
-//  Copyright (c) 2011 BildPeter Visuals. All rights reserved.
+//  Created by Peter A. Kolski on 15.11.11.
+//  Copyright (c) 2011 Peter A. Kolski. All rights reserved.
 //
 
 #include <netevo.h>

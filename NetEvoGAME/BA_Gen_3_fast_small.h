@@ -3,7 +3,7 @@
 //  NetEvoGAME
 //
 //  Created by Peter A. Kolski on 23.01.13.
-//  Copyright (c) 2013 Peter. All rights reserved.
+//  Copyright (c) 2013 Peter A. Kolski. All rights reserved.
 //
 
 #ifndef NetEvoGAME_BA_Gen_3_fast_small_h

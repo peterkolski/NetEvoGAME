@@ -2,8 +2,8 @@
 //  StaticGraph.cpp
 //  LemonGame
 //
-//  Created by BildPeter Visuals on 09.11.11.
-//  Copyright (c) 2011 BildPeter Visuals. All rights reserved.
+//  Created by Peter A. Kolski on 09.11.11.
+//  Copyright (c) 2011 Peter A. Kolski. All rights reserved.
 //
 
 #include <iostream>

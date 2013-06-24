@@ -1,8 +1,8 @@
 //
 //  NE2_Reference_LEMON_Map.cpp
 //
-//  Created by BildPeter Visuals on 28.11.11.
-//  Copyright (c) 2011 BildPeter Visuals. All rights reserved.
+//  Created by Peter A. Kolski on 28.11.11.
+//  Copyright (c) 2011 Peter A. Kolski. All rights reserved.
 //
 
 #include <iostream>

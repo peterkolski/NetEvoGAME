@@ -3,7 +3,7 @@
 //  NE2_SimODE
 //
 //  Created by Peter A. Kolski on 27.09.11.
-//  Copyright 2011 BildPeter Visuals. All rights reserved.
+//  Copyright 2011 Peter A. Kolski. All rights reserved.
 //
 
 

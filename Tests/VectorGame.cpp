@@ -3,7 +3,7 @@
 //  NE2_SIR
 //
 //  Created by Peter A. Kolski on 14.11.11.
-//  Copyright (c) 2011 BildPeter Visuals. All rights reserved.
+//  Copyright (c) 2011 Peter A. Kolski. All rights reserved.
 //
 
 #include <iostream>
